@@ -1,0 +1,28 @@
+# Site settings
+title: Sakarias Gaming
+email: sakarias@sakarias.net
+url: https://sakarias.net/
+description: ""
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary-dark: '#36373d'
+  links: '#FFF'
+
+# Footer settings
+footer: Sakarias Gaming
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: https://twitter.com/sakariaslp
+  - title: twitch
+    url: http://twitch.tv/sakariaslp
+  - title: youtube
+    url: http://youtube.com/sakarias
+  - title: instagram
+    url: http://instagram.com/sakarias
+
+# Build settings
+markdown: kramdown
+permalink: pretty
