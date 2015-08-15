@@ -1,5 +1,5 @@
-$.getJSON("http://sakarias.net/cache/twitchStatus.json", function(obj) {
-  if ( obj.streamLive == 1) {
+$.getJSON("http://cache.sakarias.net/twitchStatus.json", function(obj) {
+  if (obj.streamLive == 1) {
     var streamTitle     = obj.streamTitle;
     var streamGame      = obj.streamGame;
     var streamPreview   = obj.streamPreview;
