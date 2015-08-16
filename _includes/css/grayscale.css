@@ -400,3 +400,6 @@ tr {
     color: #515151;
 }
 
+iframe { 
+    border: 0px solid black; 
+}
