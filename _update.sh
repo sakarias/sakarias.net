@@ -15,7 +15,7 @@ function change_url {
 }
 
 function deploy {
-  URL="http://sakarias.net"
+  URL="https://sakarias.net"
   change_url $URL
   build
   rsync -az -e ssh --delete _site/* charlie.rockstable.net:/home/sites/sakarias.net/www/
