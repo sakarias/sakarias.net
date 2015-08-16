@@ -7,7 +7,7 @@ description: ""
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary-dark: '#36373d'
-  links: '#FFF'
+  links: '#32C3A6'
 
 # Footer settings
 footer: Sakarias Gaming
