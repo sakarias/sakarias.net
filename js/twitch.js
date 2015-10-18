@@ -17,7 +17,7 @@ function getTwitch() {
     else {
       var streamPreview = obj.streamPreview;
       $('#twitchContainer').append('<span class="light">Sakarias</span> Gaming');
-      $('#twitchStream').append('<img src="' + streamPreview +'" />');
+      $('#twitchStream').append('<img src="' + streamPreview +'" height="405" width="720" />');
     }
     setTimeout(getTwitch, 300000);
   });
