@@ -1,27 +1,36 @@
-url: http://sakarias.net
+url: https://sakarias.net
+# top level stuff you probably don't need to touch
+highlighter: pygments
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+permalink: /:title.html
+paginate: 5
+gems: [jekyll-paginate]
+port: 3000
+safe: true
+
+
+# edit here to achieve your personal greatness
+baseurl: /
 title: Sakarias Gaming
+author: Sakarias
+description: 
+avatar: sakarias.png
 email: sakarias@sakarias.net
-description: ""
+#github: biomadeira/sustain # username
+twitter: sakariaslp
+twitch: sakariaslp
+youtube: sakarias
+instagram: sakarias
+#reddit: sakarias
+#facebook:
+#linkedin: username
+#stackoverflow: username   #e.g: users/2735833/proton1h1
+#Comment out if you don't want disqus 
+#disqus: username
+google_analytics: UA-57646-11
 
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary-dark: '#36373d'
-  links: '#FFF'
 
-# Footer settings
-footer: Sakarias Gaming
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: https://twitter.com/sakariaslp
-  - title: twitch
-    url: http://twitch.tv/sakariaslp
-  - title: youtube
-    url: http://youtube.com/sakarias
-  - title: instagram
-    url: http://instagram.com/sakarias
-
-# Build settings
-markdown: kramdown
-permalink: pretty
+# needed for travis-ci build
+exclude: [vendor]

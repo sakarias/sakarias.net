@@ -1,0 +1,41 @@
+---
+layout: home
+title: Sosiale koblinger
+---
+
+<section id="social">
+  <div class="container">
+  <div class="text">
+    {% if site.github %}
+    <h3><a href="http://github.com/{{ site.github }}"><i class="fa fa-github"></i> github</a></h3>
+    {% endif %}
+    {% if site.email %}
+    <h3><a href="mailto:{{ site.email}}"><i class="fa fa-envelope"></i> e-post</a></h3>
+    {% endif %}
+    {% if site.twitch %}
+    <h3><a href="http://twitch.tv/{{ site.twitch }}"><i class="fa fa-twitch"></i> twitch</a></h3>
+    {% endif %}
+    {% if site.youtube %}
+    <h3><a href="http://youtube.com/{{ site.youtube }}"><i class="fa fa-youtube"></i> youtube</a></h3>
+    {% endif %}
+    {% if site.twitter %}
+    <h3><a href="http://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i> twitter</a></h3>
+    {% endif %}
+    {% if site.facebook %}
+    <h3><a href="http://facebook.com/{{ site.facebook }}"><i class="fa fa-facebook"></i> facebook</a></h3>
+    {% endif %}
+    {% if site.instagram %}
+    <h3><a href="http://instagram.com/{{ site.instagram }}"><i class="fa fa-instagram"></i> instagram</a></h3>
+    {% endif %}
+    {% if site.reddit %}
+    <h3><a href="http://reddit.com/r/{{ site.reddit }}"><i class="fa fa-reddit"></i> reddit</a></h3>
+    {% endif %}
+    {% if site.linkedin %}
+    <h3><a href="http://linkedin.com/in/{{ site.linkedin }}"><i class="fa fa-linkedin"></i> linkedin</a></h3>
+    {% endif %}
+    {% if site.stackoverflow %}
+    <h3><a href="http://stackoverflow.com/{{ site.stackoverflow }}"><i class="fa fa-stack-overflow"></i> stack overflow</a></h3>
+    {% endif %}
+    </div>
+  </div>
+</section>
