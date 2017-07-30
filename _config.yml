@@ -6,7 +6,7 @@ rdiscount:
   extensions: [smart]
 permalink: /:title.html
 paginate: 5
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 port: 3000
 safe: true
 
@@ -17,12 +17,12 @@ title: Sakarias Gaming
 author: Sakarias
 description: 
 avatar: sakarias.png
-email: sakarias@sakarias.net
+email: sakarias+kontakt@sakarias.net
 #github: biomadeira/sustain # username
-twitter: sakariaslp
-twitch: sakariaslp
+twitter: sakariasgaming
+twitch: sakariasgaming
 youtube: sakarias
-instagram: sakariaslp
+instagram: sakariasgaming
 #reddit: sakarias
 #facebook:
 #linkedin: username
