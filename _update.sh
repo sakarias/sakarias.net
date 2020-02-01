@@ -1,7 +1,8 @@
 #! /bin/bash
 
 function build {
-  jekyll build
+  #jekyll build
+  /usr/local/lib/ruby/gems/2.6.0/bin/jekyll build
   if [ $? -ne 0 ];
     then
     echo "Build failed!"
