@@ -15,9 +15,9 @@ safe: true
 baseurl: /
 title: Sakarias Gaming
 author: Sakarias
-description: 
-avatar: sakarias.png
-email: sakarias+kontakt@sakarias.net
+description:
+avatar: sakarias.webp
+email: sakarias@sakarias.net
 #github: biomadeira/sustain # username
 twitter: sakariasgaming
 twitch: sakarias
@@ -27,7 +27,7 @@ instagram: sakariasgaming
 #facebook:
 #linkedin: username
 #stackoverflow: username   #e.g: users/2735833/proton1h1
-#Comment out if you don't want disqus 
+#Comment out if you don't want disqus
 #disqus: username
 google_analytics: UA-57646-11
 
