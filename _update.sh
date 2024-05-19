@@ -1,9 +1,9 @@
 #! /bin/bash
+Jekyll="/Users/sakarias/.gem/ruby/3.1.3/bin/jekyll"
+wwwGit="~/Projects/sakarias.net-www"
 
 function build {
-  #jekyll build
-  #/usr/local/lib/ruby/gems/2.6.0/bin/jekyll build
-  /usr/local/lib/ruby/gems/3.0.0/bin/jekyll build
+  ${Jekyll} build
   if [ $? -ne 0 ];
     then
     echo "Build failed!"
@@ -20,8 +20,21 @@ function deploy {
   URL="https://sakarias.net"
   change_url $URL
   build
-  /usr/local/bin/rsync -az -e ssh --delete _site/* sakarias@web01.pve-cluster.rockstable.net:/mnt/nginx/sites/sakarias.net/www/
-  open $URL
+  #/usr/local/bin/rsync -az -e ssh --delete _site/* sakarias@web01.pve-cluster.rockstable.net:/mnt/nginx/sites/sakarias.net/www/
+  
+  if [ -d ${wwwGit} ]
+  then
+    /usr/local/bin/rsync -az --delete _site/* ${wwwGit}
+    cd ${wwwGit}
+    git add *
+    buildDate=$(date +%Y-%m-%d)
+    git commit -m "sakarias.net build ${buildDate}" && git push
+  else
+    echo "${wwwGit} does not exist."
+    exit 1
+  fi
+  echo "reload docker"
+  #open $URL
 }
 
 function localtest {
@@ -35,7 +48,7 @@ function localtest {
 function local {
   URL="http://localhost:4000"
   change_url $URL
-  /usr/local/lib/ruby/gems/3.0.0/bin/jekyll serve --watch --future --drafts
+  ${Jekyll} serve --watch --future --drafts
 }
 
 function usage {
